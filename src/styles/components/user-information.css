@@ -1,0 +1,98 @@
+.user-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 15%;
+  padding: 21px 0 12px 0;
+  border-bottom: 1px solid var(--line-color-darkGray);
+}
+
+.user-information__title {
+  padding-left: 22.5px;
+  position: relative;
+}
+
+.user-information__name {
+  color: var(--font-color-green);
+  font-size: 24px;
+  font-weight: 800;
+  margin-right: 3px;
+}
+
+.user-information__nameTitle {
+  color: var(--font-color-black);
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 20px;
+}
+
+.user-information__dropDown {
+  position: absolute;
+  bottom: -2px;
+  padding: 5px 36px 5px 7.5px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  border-color: var(--header-color);
+  color: var(--header-color);
+  appearance: none;
+  background: url('/public/assets/icon/monitoring/ic_select.svg') no-repeat right 13.5px center;
+  background-size: 10%;
+}
+
+.user-information__dropDown__device {
+  position: absolute;
+  bottom: -2px;
+  left: 300px;
+  padding: 5px 36px 5px 7.5px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  border-color: var(--header-color);
+  color: var(--header-color);
+  appearance: none;
+  background: url('/public/assets/icon/monitoring/ic_select.svg') no-repeat right 13.5px center;
+  background-size: 10%;
+}
+
+.refresh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 29.5px;
+  width: 100px;
+  background-color: var(--header-color);
+  border-radius: 7px;
+  border: 0;
+  padding: 0 15px 0 6px;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  background-color: var(--header-color-hover);
+}
+
+.refresh__iconBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21.5px;
+  width: 21.5px;
+  border-radius: 10.75px;
+  background-color: var(--font-color-white);
+}
+
+
+.refresh__icon {
+  position: absolute;
+  right: 2.5px;
+  height: 15.5px;
+  width: 15.5px;
+}
+
+.refresh__text {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--font-color-white);
+}

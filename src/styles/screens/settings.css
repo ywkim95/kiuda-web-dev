@@ -1,0 +1,16 @@
+.settings-screen {
+  /*height: calc(100% - 120px);*/
+  margin: 22px 15% 29px 15%;
+  /*display: grid;*/
+  /*grid-template-rows: 1fr 2fr;*/
+  /*row-gap: 15px;*/
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rangeSlider {
+  background-color: white;
+  border: 1px solid var(--line-color-darkGray);
+  border-radius: 6px;
+}

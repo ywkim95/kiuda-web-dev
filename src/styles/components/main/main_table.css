@@ -1,0 +1,164 @@
+.table {
+  display: grid;
+  grid-template-rows: 36px 1fr;
+}
+
+.table__header {
+  padding: 0 24.5px 0 20px;
+  border-bottom: 1px solid var(--line-color-darkGray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.table__search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table-search__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-search__search--wrap {
+  z-index: 20;
+  position: relative;
+}
+
+.table-search__search--wrap input {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: var(--btn-color-lightGray);
+  border: 0;
+  height: 24px;
+}
+
+.table-search__search--time {
+  width: 80px;
+  padding-left: 35.5px;
+}
+
+.table-search__search--iconBox {
+  position: absolute;
+  top: 3px;
+  left: 4.5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--font-color-white);
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.timeIconBox {
+  background: var(--font-color-white) url(/public/assets/icon/monitoring/ic_clock.png) no-repeat center;
+}
+
+.table__search-button {
+  font-size: 12px;
+  font-weight: 500;
+  width: 43.5px;
+  height: 24px;
+  border-radius: 6px;
+  border: 0;
+  background-color: var(--btn-color-green);
+  color: var(--font-color-white);
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.table__search-button:hover {
+  background-color: var(--btn-color-green-hover);
+}
+
+.table__info {
+  margin: 11.5px 24.5px 18px 33px;
+  height: 195px;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+.table__info::-webkit-scrollbar {
+  display: none;
+}
+
+.table__table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table__table-head {
+  background-color: var(--table-color-green);
+  border-radius: 6px 6px 0 0;
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table__table-body {
+  display: block;
+  overflow: auto;
+  height: 27vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.table__table-body::-webkit-scrollbar {
+  display: none;
+}
+
+.table__body-line:nth-child(2n) {
+  background-color: var(--table-color-gray);
+  border-radius: 6px;
+}
+
+.table__head-line, .table__body-line {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table__head-line {
+  font-weight: 500;
+}
+
+.table__body-line {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/*.table__head-item, .table__body-item {*/
+/*  padding: 10px 0;*/
+/*}*/
+
+.table__head-item {
+  padding: 10px 0;
+  color: var(--font-color-white);
+}
+
+.table__body-time {
+  padding: 10px 0;
+  color: var(--font-color-orange);
+}

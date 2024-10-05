@@ -1,0 +1,32 @@
+:root {
+  --font-color-black: #232323;
+  --font-color-white: #FFFFFF;
+  --font-color-orange: #FFAA3C;
+  --font-color-green: #749D5F;
+
+  --header-color: #333843;
+
+  --bg-color-gray: #EEEFEF;
+
+  --table-color-green: #749D5F;
+  --table-color-gray: #EBEBEB;
+
+  --btn-color-green: #749D5F;
+  --btn-color-lightGray: #E9EFF4;
+  --btn-color-blue: #69BEDA;
+  --btn-color-orange: #FF8533;
+  --btn-color-darkGray: #333843;
+
+  --line-color-darkGray: #AFB3B9;
+  --line-color-lightGray: #EBEBEB;
+
+  /* Hover */
+  --header-color-hover: #2D2D2D;
+
+  --btn-color-green-hover: #5F8A4E;
+  --btn-color-lightGray-hover: #DDE6EB;
+  --btn-color-blue-hover: #5FA9D6;
+  --btn-color-orange-hover: #E67A2E;
+  --btn-color-darkGray-hover: #9e9e9e;
+
+}

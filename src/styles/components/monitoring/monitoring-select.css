@@ -1,0 +1,108 @@
+.monitoring-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+}
+
+.monitoring-select__title {
+  display: flex;
+  align-items: center;
+}
+
+.monitoring-select__name {
+  color: var(--font-color-black);
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.monitoring-search {
+  display: flex;
+  align-items: center;
+}
+
+.monitoring-select__dropDown {
+  padding: 5px 36px 5px 7.5px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  border-color: var(--header-color);
+  color: var(--header-color);
+  appearance: none;
+  background: url(/public/assets/icon/monitoring/ic_select.svg) no-repeat right 13.5px center;
+  background-size: 10%;
+}
+
+.monitoring-search__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 21px;
+}
+
+.monitoring-search__search--wrap {
+  position: relative;
+}
+
+.monitoring-search__search--wrap input {
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: var(--btn-color-lightGray);
+  border: 0;
+  height: 30px;
+}
+
+.monitoring-search__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.monitoring-search__search--date {
+  width: 103px;
+  padding-left: 35.5px;
+}
+
+.monitoring-search__button {
+  font-size: 16px;
+  font-weight: 500;
+  width: 76.5px;
+  height: 40px;
+  border-radius: 6px;
+  border: 0px;
+  background-color: var(--btn-color-green);
+  color: var(--font-color-white);
+  cursor: pointer;
+  margin-left: 41px;
+}
+
+.monitoring-search__button:hover {
+  background-color: var(--btn-color-green-hover);
+}
+
+.monitoring-search__search--iconBox {
+  position: absolute;
+  top: 6px;
+  left: 4.5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--font-color-white);
+}
+
+.dateIconBox {
+  background: url(/public/assets/icon/monitoring/ic_calendar.png) no-repeat center / 15px auto;
+  background-color: var(--font-color-white);
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}

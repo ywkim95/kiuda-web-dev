@@ -1,0 +1,27 @@
+.main-screen {
+    height: calc(100% - 120px);
+    margin: 22px 15% 29px 15%;
+    display: grid;
+    grid-template-columns: 4.14fr 1fr 7.55fr;
+    grid-template-rows: 189px 299px 258px;
+    column-gap: 18px;
+    row-gap: 15px;
+}
+
+.main-screen > div {
+    background-color: white;
+    border: 1px solid var(--line-color-darkGray);
+    border-radius: 6px;
+}
+
+.status {
+    grid-column: span 3;    
+}
+
+.camera {
+    grid-column: span 2;
+}
+
+.table {
+    grid-column: span 2;
+}

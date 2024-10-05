@@ -1,0 +1,26 @@
+const JWT_EXPIRE_TIME: number = 5 * 60 * 1000;
+
+const REFRESH_TOKEN = process.env.REACT_APP_REFRESH_TOKEN!;
+
+const IS_LOGGED_IN = process.env.REACT_APP_IS_LOGGED_IN!;
+
+const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN!;
+
+const ROOM_ID = process.env.REACT_APP_ROOM_ID!;
+
+const AUTO_LOGIN = process.env.REACT_APP_AUTO_LOGIN!;
+
+const DEVICE_ID = process.env.REACT_APP_DEVICE_ID!;
+
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY!;
+
+export {
+  JWT_EXPIRE_TIME,
+  REFRESH_TOKEN,
+  IS_LOGGED_IN,
+  ACCESS_TOKEN,
+  ROOM_ID,
+  AUTO_LOGIN,
+  DEVICE_ID,
+  WEATHER_API_KEY,
+};

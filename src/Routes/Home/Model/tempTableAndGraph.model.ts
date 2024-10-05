@@ -1,0 +1,29 @@
+export interface TempTableAndGraph {
+  id: number;
+  createdAt: string;
+  deviceId: number;
+  kPa_Avg_1: number;
+  kPa_Avg_2: number;
+  kPa_Avg_3: number;
+  kPa_Avg_4: number;
+  kPa_Avg_5: number;
+  kPa_Avg_6: number;
+  kPa_Avg_7: number;
+  kPa_Avg_8: number;
+  kPa_Avg_9: number;
+  kPa_Avg_10: number;
+  kPa_Avg_11: number;
+  kPa_Avg_12: number;
+  SoilTemp_Avg_1: number;
+  SoilTemp_Avg_2: number;
+  SoilTemp_Avg_3: number;
+  SoilTemp_Avg_4: number;
+  SoilTemp_Avg_5: number;
+  SoilTemp_Avg_6: number;
+  SoilTemp_Avg_7: number;
+  SoilTemp_Avg_8: number;
+  SoilTemp_Avg_9: number;
+  SoilTemp_Avg_10: number;
+  SoilTemp_Avg_11: number;
+  SoilTemp_Avg_12: number;
+}

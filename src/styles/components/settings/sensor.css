@@ -1,0 +1,166 @@
+.sensor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sensor > div {
+  background-color: white;
+  border: 1px solid var(--line-color-darkGray);
+  border-radius: 6px;
+}
+
+.sensor__component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31.5px 40px 25px 45px;
+}
+
+.sersor__name {
+  margin-bottom: 27px;
+}
+
+.sensor__settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.sensor__settings > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sensor__reference--dropDown {
+  height: 28px;
+  width: 130px;
+  padding-left: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border-color: var(--header-color);
+  color: var(--header-color);
+  appearance: none;
+  background: url('/public/assets/icon/monitoring/ic_select.svg') no-repeat right 13.5px center;
+  background-size: 10%;
+}
+
+#switch {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+}
+
+.switch__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 95px;
+  height: 28px;
+  right: 17.5px;
+  background: var(--bg-color-gray);
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.onf_btn {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: var(--btn-color-darkGray);
+  transition: 0.3s;
+}
+
+.switch__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.on-text {
+  left: 10px;
+  opacity: 0;
+}
+
+.off-text {
+  right: 10px;
+  color: var(--font-color-black);
+}
+
+/* checking style */
+#switch:checked + .switch__label {
+  background: var(--bg-color-gray);
+}
+
+/* Move the button */
+#switch:checked + .switch__label .onf_btn {
+  left: 71px;
+  background: var(--btn-color-darkGray);
+}
+
+/* Toggle text visibility */
+#switch:checked + .switch__label .on-text {
+  color: var(--font-color-black);
+  opacity: 1;
+}
+
+#switch:checked + .switch__label .off-text {
+  color: var(--font-color-black);
+  opacity: 0;
+}
+
+.sensor__controlValue--value, .sensor__controlDeviation--value {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sensor__controlValue--resultBox, .sensor__controlDeviation--resultBox {
+  display: flex;
+  width: 95px;
+  border-radius: 14px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-gray);
+}
+
+.sensor__controlValue--resultBox input, .sensor__controlDeviation--resultBox input {
+  display: flex;
+  width: 95px;
+  border-radius: 14px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-gray);
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--font-color-black);
+}
+
+.sensor__controlDeviation--minus, .sensor__controlDeviation--plus, .sensor__controlValue--minus, .sensor__controlValue--plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}

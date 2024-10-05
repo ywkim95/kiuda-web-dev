@@ -1,0 +1,31 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./Styles/Components/common.css);
+@import url(./App.css);
+/* Components */
+@import url(./Styles/Components/header.css);
+@import url(./Styles/Components/user-information.css);
+@import url(./Styles/Components/main/main_notice.css);
+@import url(./Styles/Components/main/main_table.css);
+@import url(./Styles/Components/main/main_camera.css);
+@import url(./Styles/Components/main/main_graph.css);
+@import url(./Styles/Components/main/main_status.css);
+@import url(./Styles/Components/monitoring/monitoring-select.css);
+@import url(./Styles/Components/monitoring/monitoring-table.css);
+@import url(./Styles/Components/settings/sensor.css);
+@import url(./Styles/Components/settings/rangeSlider.css);
+@import url(./Styles/Components/monitoring/monitoring-modal.css);
+
+/* Screens */
+@import url(./Styles/Screens/login.css);
+@import url(./Styles/Screens/main.css);
+@import url(./Styles/Screens/monitoring.css);
+@import url(./Styles/Screens/settings.css);
+@import url(./Styles/Screens/nomatch.css);
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

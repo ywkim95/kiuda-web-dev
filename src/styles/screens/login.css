@@ -1,0 +1,141 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--font-color-white);
+    border-radius: 7px;
+    box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.37);
+    width: 378px;
+    height: 535px;
+    padding: 13px 0 0 0;
+}
+
+.login--image {
+    margin-bottom: 17.5px;
+    width: 318px;
+}
+
+.login-header__title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    color: var(--btn-color-darkGray);
+}
+
+.login-header__subTitle {
+    font-size: 25.5px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: var(--btn-color-darkGray);
+}
+
+.userName-box, .userPassword-box {
+    width: 299px;
+    position: relative;
+}
+
+.userName-box {
+    height: 29.5px;
+    padding: 14px 0 14px 0;
+    border-bottom: 1px solid var(--line-color-darkGray);
+}
+
+.userPassword-box {
+    height: 29.5px;
+    margin-top: 14px;
+}
+
+.userName-box > label > img, .userPassword-box > label > img {
+    position: relative;
+    left: -21px;
+    height: 29.5px;
+
+}
+
+input {
+    position: relative;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 0;
+    color: var(--btn-color-darkGray);
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+.userName-box > input {
+    top: -10.5px;
+}
+
+.userPassword-box > input {
+    top: -9px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--font-color-white);
+    margin: 22px 0px 25px 0px;
+}
+
+.checkbox > input {
+    accent-color: var(--btn-color-darkGray);
+    margin: 0px 14px 0px 0px;
+    width: 13px;
+}
+
+.checkbox > label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--btn-color-darkGray);
+}
+
+.login__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 317px;
+    height: 48px;
+    background-color: var(--btn-color-darkGray);
+    color: var(--font-color-white);
+    border-radius: 10px;
+    font-size: 18.5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 에러 발생 시 코드 */
+
+.error-placeholder {
+    position: relative;
+}
+
+.error-placeholder::placeholder {
+    color: #FF584B;
+}
+
+.error-placeholder::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('/public/assets/icon/monitoring/ic_notification_red.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}

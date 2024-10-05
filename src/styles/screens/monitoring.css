@@ -1,0 +1,13 @@
+.monitoring-screen {
+    height: calc(100% - 120px);
+    margin: 22px 15% 29px 15%;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    row-gap: 15px;
+}
+
+.monitoring-screen > div {
+    background-color: white;
+    border: 1px solid var(--line-color-darkGray);
+    border-radius: 6px;
+}

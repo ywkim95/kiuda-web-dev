@@ -1,0 +1,36 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.back-button,
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.back-button:hover,
+.home-button:hover {
+  background-color: #555;
+}
